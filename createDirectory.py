@@ -1,4 +1,3 @@
-import os
 import sys
 from pathlib import Path, PurePath
 
@@ -6,8 +5,7 @@ from pathlib import Path, PurePath
 def createDirectory(directoryPath,directoryName):
     newPath = Path(directoryPath,directoryName)
     if not newPath.exists():
-        newPath.mkdir()
-
+        newPath.mkdir(parents=True)
 
 if __name__ == '__main__':
     arguments = sys.argv[1:]
