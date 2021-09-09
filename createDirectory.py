@@ -17,6 +17,5 @@ if __name__ == '__main__':
     for x in range(0,len(arguments),2):
         tempPath = Path(arguments[x])
         if tempPath.is_dir():
-
             createDirectory(tempPath,arguments[x+1])
     pass
